@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Багц үүсгэх</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+inputHotelCost inputHotelStayDays inputDate submitButton inputUser
+
+<body>
+    <div class="board-section">
+        <h1>Багц нэмж үүсгэх</h1>
+        <div class="thread-section">
+        </div>
+        <form class="form-section">
+            <p>Гүйцэтгэгч</p>
+            <input type="text" placeholder="Эрдэнэдэлгэр" id="inputUser" />
+
+            <p>Хэрэглэгчийн Дугаар</p>
+            <textarea id="inputHotelCost" placeholder="192056" rows="1" cols="28"></textarea>
+            <p>Багцын төрөл сонгох</p>
+            <select id="inputHotelStayDays">
+                <option selected disabled>Багцын төрөл</option>
+                <option value="13">Free HD</option>
+                <option value="14">Basic HD</option>
+                <option value="15">Standart HD</option>
+                <option value="33">Premium HD</option>
+                <option value="56">Basic HD Abroad</option>
+                <option value="59">Standart HD Abroad</option>
+            </select>
+            <p>Он сар өдөр</p>
+            <input type="date" id="inputDate" value="2019-08-22" />
+            <div class="layer1-charBar">
+            </div>
+            <p></p>
+            <button id="submitButton" class="button" type="submit">Багц нэмж үүсгэх</button>
+
+        </form>
+    </div>
+    <p></p>
+    <form action="/logout" method="POST">
+        <button class="button">Гарах</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/addin.js"></script>
+</body>
+
+</html>
